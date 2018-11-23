@@ -1,0 +1,2968 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>968</width>
+    <height>678</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>10</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Ubuntu</family>
+     <pointsize>24</pointsize>
+     <weight>50</weight>
+     <italic>true</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: italic 18pt &quot;Ubuntu&quot;;
+font: italic 24pt &quot;Ubuntu&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Farmacias</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="Persona">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>70</y>
+     <width>971</width>
+     <height>781</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tabCrudFarmacias">
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;uhyasvbfd&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <attribute name="title">
+     <string>Farmacias</string>
+    </attribute>
+    <widget class="QTabWidget" name="tb_agregarFarmacia">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>961</width>
+       <height>741</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>Agregar Farmacia</string>
+      </attribute>
+      <widget class="QWidget" name="verticalLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>230</y>
+         <width>160</width>
+         <height>95</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLineEdit" name="tf_Farmacia_Ciudad"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="tf_Farmacia_departamento"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="tf_Farmacia_calle"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>60</y>
+         <width>231</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: italic 20pt &quot;URW Palladio L&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Agregar Farmacia</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>140</y>
+         <width>158</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Codigo de Farmacia</string>
+       </property>
+       <property name="indent">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Farmacia_Cancelar">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>530</y>
+         <width>101</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Cancelar</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>190</y>
+         <width>158</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Direccion Completa</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Farmacia_asigPropietarios">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>370</y>
+         <width>71</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Asigar</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>400</y>
+         <width>158</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Asignar Farmaceuticos</string>
+       </property>
+       <property name="indent">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cb_Farmacia_farmaceuticos">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>400</y>
+         <width>161</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Farmacia_Agregar">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>460</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Agregar</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Farmacia_codigoFarm">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>140</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Farmacia_asigFarmaceuticos">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>400</y>
+         <width>71</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Asigar</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>230</y>
+         <width>160</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Ciudad</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Departamento</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Calle</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QComboBox" name="cb_Farmacia_Propietarios">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>370</y>
+         <width>161</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>370</y>
+         <width>158</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Asignar Propietarios</string>
+       </property>
+       <property name="indent">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Farmacia_Modificar">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>460</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Modificar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Farmacia_Eliminar">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>460</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Eliminar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_FindFarmacia">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>140</y>
+         <width>121</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Buscar Farmacia</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_load">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>430</y>
+         <width>71</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Load</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cb_almaneces">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>340</y>
+         <width>161</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_74">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>340</y>
+         <width>158</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Asignar Almacenes</string>
+       </property>
+       <property name="indent">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_asignaralmancen">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>340</y>
+         <width>71</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Asigar</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_5">
+      <attribute name="title">
+       <string>Almacen de Farmacia</string>
+      </attribute>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>20</y>
+         <width>241</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: italic 20pt &quot;URW Palladio L&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Productos Disponibles</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Farmacia_CodFarmaciaAlmacenBuscar">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>60</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_27">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>60</y>
+         <width>158</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Codigo de Farmacia</string>
+       </property>
+       <property name="indent">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Farmacia_BuscarProductos">
+       <property name="geometry">
+        <rect>
+         <x>580</x>
+         <y>60</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>BUSCAR</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_77">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>140</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Almacenes</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_90">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>100</y>
+         <width>158</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Codigo Almacen</string>
+       </property>
+       <property name="indent">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_alamacenfarma">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>100</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_almacen_farmacia">
+       <property name="geometry">
+        <rect>
+         <x>580</x>
+         <y>100</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>BUSCAR</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>170</y>
+         <width>531</width>
+         <height>461</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_91">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>140</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Productos</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tb_almacenesfarma">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>170</y>
+         <width>121</width>
+         <height>261</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Pedidos a Laboratorios</string>
+      </attribute>
+      <widget class="QTableWidget" name="tableWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>511</width>
+         <height>341</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Farmacia_BuscarProductos_3">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>160</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>LOAD</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_84">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Codigo Laboratorio</string>
+       </property>
+       <property name="indent">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Farmacia_CodFarmaciaAlmacenBuscar_4">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>70</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_85">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Codigo Producto</string>
+       </property>
+       <property name="indent">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Farmacia_CodFarmaciaAlmacenBuscar_5">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>100</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_86">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Precio de Producto</string>
+       </property>
+       <property name="indent">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Farmacia_CodFarmaciaAlmacenBuscar_6">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>130</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Farmacia_CodFarmaciaAlmacenBuscar_3">
+       <property name="geometry">
+        <rect>
+         <x>660</x>
+         <y>160</y>
+         <width>141</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_81">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>160</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Codigo Almacen</string>
+       </property>
+       <property name="indent">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_104">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Cantidad a Comprar</string>
+       </property>
+       <property name="indent">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Farmacia_CodFarmaciaAlmacenBuscar_12">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>160</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget_9">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>200</y>
+         <width>411</width>
+         <height>341</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Farmacia_BuscarProductos_6">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>70</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Agregar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Farmacia_BuscarProductos_7">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>160</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Realizar Pedido</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_12">
+      <attribute name="title">
+       <string>Personal</string>
+      </attribute>
+      <widget class="QTableWidget" name="tableWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>100</y>
+         <width>321</width>
+         <height>461</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_load_2">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>20</y>
+         <width>71</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Load</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_76">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>60</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Propietarios</string>
+       </property>
+       <property name="indent">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_78">
+       <property name="geometry">
+        <rect>
+         <x>500</x>
+         <y>60</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Responsables</string>
+       </property>
+       <property name="indent">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>100</y>
+         <width>321</width>
+         <height>461</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="codigo_farmacia">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>20</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_79">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>158</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Codigo de Farmacia</string>
+       </property>
+       <property name="indent">
+        <number>0</number>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Almacenes">
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Almaneces&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">Almacences</string>
+    </property>
+    <attribute name="title">
+     <string>Almacenes</string>
+    </attribute>
+    <widget class="QPushButton" name="bt_agregarAlmacen">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>150</y>
+       <width>97</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Agregar</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_75">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>70</y>
+       <width>66</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Codigo</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tf_codigo_almacenes">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>70</y>
+       <width>158</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabCrudFarmaceuticos">
+    <attribute name="title">
+     <string>Personas</string>
+    </attribute>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>120</y>
+       <width>131</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nombre Completo</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>40</y>
+       <width>261</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: italic 20pt &quot;URW Palladio L&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Agregar Farmaceuticos</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tf_Farmaceutico_nombre">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>120</y>
+       <width>158</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_18">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>170</y>
+       <width>71</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Direccion</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tf_Farmaceutico_direccion">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>170</y>
+       <width>158</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_19">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>220</y>
+       <width>41</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Edad</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tf_Farmaceutico_edad">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>220</y>
+       <width>158</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_20">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>340</y>
+       <width>16</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tf_Farmaceutico_id">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>340</y>
+       <width>158</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_Farmaceutico_cancelar">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>480</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cancelar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_Farmaceutico_agregar">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>390</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Agregar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_Farmaceutico_Modificar">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>390</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Modificar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_Farmaceutico_Eliminar">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>390</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Eliminar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_FindFarmaceutico">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>120</y>
+       <width>161</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Buscar Farmaceutico</string>
+     </property>
+    </widget>
+    <widget class="QTabWidget" name="tabPrincipal_2">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>-30</y>
+       <width>751</width>
+       <height>771</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tabCrudFarmacias_2">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;uhyasvbfd&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <attribute name="title">
+       <string>Farmacias</string>
+      </attribute>
+      <widget class="QTabWidget" name="tabWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>731</width>
+         <height>631</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_8">
+        <attribute name="title">
+         <string>Agregar Farmacia</string>
+        </attribute>
+        <widget class="QWidget" name="verticalLayoutWidget_3">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>230</y>
+           <width>160</width>
+           <height>95</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLineEdit" name="tf_Farmacia_Ciudad_2"/>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="tf_Farmacia_departamento_2"/>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="tf_Farmacia_calle_2"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QLabel" name="label_38">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>60</y>
+           <width>231</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: italic 20pt &quot;URW Palladio L&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Agregar Farmacia</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_39">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>140</y>
+           <width>158</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::RightToLeft</enum>
+         </property>
+         <property name="text">
+          <string>Codigo de Farmacia</string>
+         </property>
+         <property name="indent">
+          <number>0</number>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="bt_Farmacia_Cancelar_2">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>530</y>
+           <width>101</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Cancelar</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_40">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>190</y>
+           <width>158</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Direccion Completa</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="bt_Farmacia_asigPropietarios_2">
+         <property name="geometry">
+          <rect>
+           <x>510</x>
+           <y>350</y>
+           <width>71</width>
+           <height>27</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Asigar</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_41">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>380</y>
+           <width>158</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::RightToLeft</enum>
+         </property>
+         <property name="text">
+          <string>Asignar Farmaceuticos</string>
+         </property>
+         <property name="indent">
+          <number>0</number>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="cb_Farmacia_farmaceuticos_2">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>380</y>
+           <width>161</width>
+           <height>27</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="bt_Farmacia_Agregar_2">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>460</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Agregar</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="tf_Farmacia_codigoFarm_2">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>140</y>
+           <width>158</width>
+           <height>27</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="bt_Farmacia_asigFarmaceuticos_2">
+         <property name="geometry">
+          <rect>
+           <x>510</x>
+           <y>380</y>
+           <width>71</width>
+           <height>27</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Asigar</string>
+         </property>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_4">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>230</y>
+           <width>160</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_42">
+            <property name="text">
+             <string>Ciudad</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_43">
+            <property name="text">
+             <string>Departamento</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_44">
+            <property name="text">
+             <string>Calle</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QComboBox" name="cb_Farmacia_Propietarios_2">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>350</y>
+           <width>161</width>
+           <height>27</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_45">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>350</y>
+           <width>158</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::RightToLeft</enum>
+         </property>
+         <property name="text">
+          <string>Asignar Propietarios</string>
+         </property>
+         <property name="indent">
+          <number>0</number>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="bt_Farmacia_Modificar_2">
+         <property name="geometry">
+          <rect>
+           <x>310</x>
+           <y>460</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Modificar</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="bt_Farmacia_Eliminar_2">
+         <property name="geometry">
+          <rect>
+           <x>470</x>
+           <y>460</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Eliminar</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="bt_FindFarmacia_2">
+         <property name="geometry">
+          <rect>
+           <x>510</x>
+           <y>140</y>
+           <width>121</width>
+           <height>27</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Buscar Farmacia</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_9">
+        <attribute name="title">
+         <string>Almacen de Farmacia</string>
+        </attribute>
+        <widget class="QLabel" name="label_46">
+         <property name="geometry">
+          <rect>
+           <x>250</x>
+           <y>40</y>
+           <width>241</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: italic 20pt &quot;URW Palladio L&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Productos Disponibles</string>
+         </property>
+        </widget>
+        <widget class="QTableView" name="tableView_2">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>110</y>
+           <width>601</width>
+           <height>321</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="tf_Farmacia_CodFarmaciaAlmacenBuscar_2">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>470</y>
+           <width>158</width>
+           <height>27</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_47">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>470</y>
+           <width>158</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::RightToLeft</enum>
+         </property>
+         <property name="text">
+          <string>Codigo de Farmacia</string>
+         </property>
+         <property name="indent">
+          <number>0</number>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="bt_Farmacia_BuscarProductos_2">
+         <property name="geometry">
+          <rect>
+           <x>460</x>
+           <y>460</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>BUSCAR</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabCrudFarmaceuticos_2">
+      <attribute name="title">
+       <string>Farmaceuticos</string>
+      </attribute>
+      <widget class="QLabel" name="label_48">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>170</y>
+         <width>131</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Nombre Completo</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_49">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>40</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: italic 20pt &quot;URW Palladio L&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Persona</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Farmaceutico_nombre_2">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>170</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_50">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>220</y>
+         <width>71</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Direccion</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Farmaceutico_direccion_2">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>220</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_51">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>270</y>
+         <width>41</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Edad</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Farmaceutico_edad_2">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>270</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_52">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>120</y>
+         <width>16</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Farmaceutico_id_2">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>120</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Farmaceutico_cancelar_2">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>480</y>
+         <width>101</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Cancelar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Farmaceutico_agregar_2">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>390</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Agregar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Farmaceutico_Modificar_2">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>390</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Modificar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Farmaceutico_Eliminar_2">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>390</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Eliminar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_FindFarmaceutico_2">
+       <property name="geometry">
+        <rect>
+         <x>500</x>
+         <y>120</y>
+         <width>161</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Buscar Farmaceutico</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabCrudPropietarios_2">
+      <attribute name="title">
+       <string>Propietarios</string>
+      </attribute>
+      <widget class="QLabel" name="label_53">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>40</y>
+         <width>261</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: italic 20pt &quot;URW Palladio L&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Agregar Propietarios</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_54">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>120</y>
+         <width>131</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Nombre Completo</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_propietario_nombre_2">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>120</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_55">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>220</y>
+         <width>41</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Edad</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_propietario_edad_2">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>220</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_propietario_direccion_2">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>170</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_56">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>170</y>
+         <width>71</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Direccion</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_57">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>270</y>
+         <width>16</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_propietario_id_2">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>270</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_propietario_cancelar_2">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>430</y>
+         <width>101</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Cancelar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_propietario_agregar_2">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>350</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Agregar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_propietario_Modificar_2">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>350</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Modificar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_propietario_Eliminar_2">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>350</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Eliminar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_FindPropietario_2">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>120</y>
+         <width>161</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Buscar Propietario</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabCrudLaboratorios_2">
+      <attribute name="title">
+       <string>Laboratorios</string>
+      </attribute>
+      <widget class="QTabWidget" name="tabWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>741</width>
+         <height>581</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_10">
+        <attribute name="title">
+         <string>Agregar Laboratorio</string>
+        </attribute>
+        <widget class="QLabel" name="label_58">
+         <property name="geometry">
+          <rect>
+           <x>250</x>
+           <y>30</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: italic 20pt &quot;URW Palladio L&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Agregar Laboratorio</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="tf_Laboratorio_id_2">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>110</y>
+           <width>158</width>
+           <height>27</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_59">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>110</y>
+           <width>21</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_60">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>150</y>
+           <width>61</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nombre</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="tf_Laboratorio_nombre_2">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>150</y>
+           <width>158</width>
+           <height>27</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="bt_Laboratorio_agregar_2">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>240</y>
+           <width>121</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Agregar </string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="bt_Laboratorio_cancelar_2">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>320</y>
+           <width>151</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Cancelar</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="bt_Laboratorio_Modificar_2">
+         <property name="geometry">
+          <rect>
+           <x>310</x>
+           <y>240</y>
+           <width>121</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Modificar</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="bt_Laboratorio_Eliminar_2">
+         <property name="geometry">
+          <rect>
+           <x>460</x>
+           <y>240</y>
+           <width>121</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Eliminar</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="bt_FindLaboratorio_2">
+         <property name="geometry">
+          <rect>
+           <x>520</x>
+           <y>110</y>
+           <width>161</width>
+           <height>27</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Buscar Laboratorio</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_11">
+        <attribute name="title">
+         <string>Agregar Producto en Laboratorio</string>
+        </attribute>
+        <widget class="QLabel" name="label_61">
+         <property name="geometry">
+          <rect>
+           <x>250</x>
+           <y>50</y>
+           <width>211</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: italic 20pt &quot;URW Palladio L&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Agregar Productos</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="tf_Laboratorio_IdProduct_2">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>130</y>
+           <width>158</width>
+           <height>27</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_62">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>130</y>
+           <width>131</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Id del Producto</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="tf_Laboratorio_cantidadProduct_2">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>170</y>
+           <width>158</width>
+           <height>27</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_63">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>170</y>
+           <width>131</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Cantidad</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_64">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>210</y>
+           <width>131</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Costo de Venta</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="tf_Laboratorio_costoVentaProducto_2">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>210</y>
+           <width>158</width>
+           <height>27</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="bt_Laboratorio_AgregarProducto_2">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>300</y>
+           <width>151</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Agregar productos</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Productos</string>
+      </attribute>
+      <widget class="QLabel" name="label_65">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>130</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Id</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_66">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>180</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Nombre</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_67">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>230</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Fabricante</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_68">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>280</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Precio de Coste</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_69">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>330</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Precio de Venta</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Producto_id_2">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>130</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Producto_nombre_2">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>180</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Producto_Fabricante_2">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>230</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Producto_precioCoste_2">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>280</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Producto_PrecioVenta_2">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>330</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_70">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>490</y>
+         <width>261</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>¿Esta protegido por la seguridad social?</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_71">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>40</y>
+         <width>261</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: italic 20pt &quot;URW Palladio L&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Agregar Productos</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Producto_cancelar_2">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>670</y>
+         <width>101</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Cancelar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Producto_agregar_2">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>590</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Agregar</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cb_Producto_TieneProteccion_2">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>490</y>
+         <width>151</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>SI</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NO</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLineEdit" name="tf_Producto_Categoria_2">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>370</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_72">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>370</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Categoria</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_73">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>410</y>
+         <width>171</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Descripcion del Producto</string>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="tf_Producto_DescripcionProducto_2">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>410</y>
+         <width>251</width>
+         <height>75</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Producto_Modificar_2">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>590</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Modificar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Producto_Eliminar_2">
+       <property name="geometry">
+        <rect>
+         <x>520</x>
+         <y>590</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Eliminar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_FindProducto_2">
+       <property name="geometry">
+        <rect>
+         <x>500</x>
+         <y>130</y>
+         <width>161</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Buscar Producto</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabCrudLaboratorios">
+    <attribute name="title">
+     <string>Laboratorios</string>
+    </attribute>
+    <widget class="QTabWidget" name="tabWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>751</width>
+       <height>581</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tab_6">
+      <attribute name="title">
+       <string>Agregar Laboratorio</string>
+      </attribute>
+      <widget class="QLabel" name="label_28">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>30</y>
+         <width>261</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: italic 20pt &quot;URW Palladio L&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Agregar Laboratorio</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Laboratorio_id">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>110</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_30">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>110</y>
+         <width>21</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_33">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>150</y>
+         <width>61</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Nombre</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Laboratorio_nombre">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>150</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Laboratorio_agregar">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>240</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Agregar </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Laboratorio_cancelar">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>320</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Cancelar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Laboratorio_Modificar">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>240</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Modificar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Laboratorio_Eliminar">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>240</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Eliminar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_FindLaboratorio">
+       <property name="geometry">
+        <rect>
+         <x>520</x>
+         <y>110</y>
+         <width>161</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Buscar Laboratorio</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_7">
+      <attribute name="title">
+       <string>Agregar Producto en Laboratorio</string>
+      </attribute>
+      <widget class="QLabel" name="label_31">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>50</y>
+         <width>211</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: italic 20pt &quot;URW Palladio L&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Agregar Productos</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Laboratorio_IdProduct">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>130</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_32">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>130</y>
+         <width>131</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Id del Producto</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Laboratorio_cantidadProduct">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>170</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_34">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>170</y>
+         <width>131</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Cantidad</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_35">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>210</y>
+         <width>131</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Precio de Venta</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Laboratorio_costoVentaProducto">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>210</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Laboratorio_AgregarProducto">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>90</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Agregar</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tb_lab_agregarproducto">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>280</y>
+         <width>221</width>
+         <height>241</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_loadprodlab">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>240</y>
+         <width>97</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>LOAD</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tb_lab_agregarproducto_2">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>280</y>
+         <width>441</width>
+         <height>241</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_80">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>240</y>
+         <width>151</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 63 italic 11pt &quot;Ubuntu&quot;;
+text-decoration: underline;</string>
+       </property>
+       <property name="text">
+        <string>Productos Disponibles</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_82">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>90</y>
+         <width>131</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Codigo Laboratorio</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf_Laboratorio_IdProduct_3">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>90</y>
+         <width>158</width>
+         <height>27</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_83">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>240</y>
+         <width>151</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 63 italic 11pt &quot;Ubuntu&quot;;
+text-decoration: underline;</string>
+       </property>
+       <property name="text">
+        <string>Productos Agregados</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_Laboratorio_AgregarProducto_3">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>240</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Cargar Productos</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Productos</string>
+    </attribute>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>130</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Id</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>180</y>
+       <width>61</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nombre</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>230</y>
+       <width>71</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Fabricante</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>280</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Precio de Coste</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tf_Producto_id">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>130</y>
+       <width>158</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tf_Producto_nombre">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>180</y>
+       <width>158</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tf_Producto_Fabricante">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>230</y>
+       <width>158</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tf_Producto_precioCoste">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>280</y>
+       <width>158</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_29">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>450</y>
+       <width>261</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>¿Esta protegido por la seguridad social?</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_26">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>40</y>
+       <width>261</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: italic 20pt &quot;URW Palladio L&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Agregar Productos</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_Producto_cancelar">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>670</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cancelar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_Producto_agregar">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>590</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Agregar</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cb_Producto_TieneProteccion">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>450</y>
+       <width>151</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>SI</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>NO</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="tf_Producto_Categoria">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>320</y>
+       <width>158</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_36">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>320</y>
+       <width>71</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Categoria</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_37">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>360</y>
+       <width>171</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Descripcion del Producto</string>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="tf_Producto_DescripcionProducto">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>360</y>
+       <width>251</width>
+       <height>75</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_Producto_Modificar">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>590</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Modificar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_Producto_Eliminar">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>590</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Eliminar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_FindProducto">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>130</y>
+       <width>161</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Buscar Producto</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>Persona</zorder>
+  <zorder>tabWidget_2</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
